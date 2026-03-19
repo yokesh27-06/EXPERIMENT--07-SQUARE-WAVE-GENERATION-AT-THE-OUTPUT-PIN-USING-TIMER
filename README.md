@@ -359,9 +359,10 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 FOR PULSE AT 500
-```
 <img width="1376" height="874" alt="image" src="https://github.com/user-attachments/assets/6122429a-4b54-4e1b-8114-2297ae71e960" />
+
 ```
+
 TON = 3 x 10 x 10^-6 = 0.00003
 TOFF= 3 x 10 x 10^-6 = 0.00003
 TOTAL TIME = TON + TOFF  
@@ -375,21 +376,42 @@ DUTY CYCLE = TON / TON+TOFF
            = 0.5
       IN % = 0.5 x 100
            = 50 %
-
-FOR PULSE AT 700
-
-TON = 
-TOFF=
-TOTAL TIME = 
+```
+FOR PULSE AT 750
+<img width="1920" height="1200" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/4c632c4c-9ba4-4d68-963f-452f83356727" />
+```
+TON = 4 x 10 x 10^-6 = 0.00004
+TOFF= 2 x 10 x 10^-6 = 0.00002
+TOTAL TIME = TON + TOFF  
+           = 0.00004 + 0.00002
+           = 0.00006
 FREQUENCY = 1/(TOTAL TIME)
+          = 1/0.00006
+          = 16666.7
+DUTY CYCLE = TON / TON+TOFF
+           = 0.00004 / 0.00006
+           = 0.7
+      IN % = 0.7 x 100
+           = 75 %
+```
 
-
-FOR PULSE AT 900
-
-TON = 
-TOFF=
-TOTAL TIME = 
+FOR PULSE AT 250
+<img width="1371" height="874" alt="image" src="https://github.com/user-attachments/assets/d7e65b38-4461-4c2d-84c1-0e454cd69be5" />
+```
+TON = 1 x 10 x 10^-6 = 0.00001
+TOFF= 2 x 10 x 10^-6 = 0.00002
+TOTAL TIME = TON + TOFF  
+           = 0.00001 + 0.00002
+           = 0.00003
 FREQUENCY = 1/(TOTAL TIME)
+          = 1/0.00003
+          = 33333.33
+DUTY CYCLE = TON / TON+TOFF
+           = 0.00001 / 0.00003
+           = 0.3
+      IN % = 0.3 x 100
+           = 30 % 
+```
 
 
 ## Result :
