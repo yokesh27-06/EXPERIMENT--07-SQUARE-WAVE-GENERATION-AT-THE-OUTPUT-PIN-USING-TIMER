@@ -347,9 +347,8 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 
 ## Output screen shots of proteus  :
- <img width="1920" height="1200" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/094dda11-7ac8-4fcb-9971-a56be23ea810" />
- <img width="1920" height="1200" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/537be7c2-a5e2-4a99-846b-c68eec4eccf6" />
- <img width="1920" height="1200" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/14200981-5592-4c72-ae43-74d7f486be22" />
+ <img width="971" height="831" alt="image" src="https://github.com/user-attachments/assets/efcafa67-2fd8-4075-bc51-72f00848e0bd" />
+
 
 
 
@@ -360,11 +359,22 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 FOR PULSE AT 500
-
-TON = 
-TOFF=
-TOTAL TIME = 
+```
+<img width="1376" height="874" alt="image" src="https://github.com/user-attachments/assets/6122429a-4b54-4e1b-8114-2297ae71e960" />
+```
+TON = 3 x 10 x 10^-6 = 0.00003
+TOFF= 3 x 10 x 10^-6 = 0.00003
+TOTAL TIME = TON + TOFF  
+           = 0.00003 + 0.00003
+           = 0.00006
 FREQUENCY = 1/(TOTAL TIME)
+          = 1/0.00006
+          = 16666.7
+DUTY CYCLE = TON / TON+TOFF
+           = 0.00003 / 0.00006
+           = 0.5
+      IN % = 0.5 x 100
+           = 50 %
 
 FOR PULSE AT 700
 
